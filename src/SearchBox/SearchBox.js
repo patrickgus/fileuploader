@@ -8,8 +8,8 @@ export default class SearchBox extends React.Component {
     return (
       <div className="SearchBox">
         <FontAwesomeIcon icon={faSearch}/>
-        <input placeholder="Search term"/>
-      </div>   
+        <input placeholder="Search term" value={this.props.searchTerm}/>
+      </div>
     );
   }
 }
