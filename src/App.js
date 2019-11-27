@@ -12,6 +12,12 @@ export default class App extends React.Component {
     }
   }
 
+  updateSearchTerm(term) {
+    this.setState({
+      searchTerm: term
+    });
+  }
+
   render() {
     return (
       <div className="App">
