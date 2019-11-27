@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SearchBar.css';
 import SearchBox from '../SearchBox/SearchBox';
 import FilterOptions from '../FilterOptions/FilterOptions';
 
-class SearchBar extends Component {
+export default class SearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
@@ -18,5 +18,3 @@ class SearchBar extends Component {
     );
   }
 }
-
-export default SearchBar;

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './FilterOptions.css';
 
-class FilterOptions extends Component {
+export default class FilterOptions extends React.Component {
   render() {
     const { filterOption } = this.props;
     return (
@@ -34,5 +34,3 @@ class FilterOptions extends Component {
     );
   }
 }
-
-export default FilterOptions;

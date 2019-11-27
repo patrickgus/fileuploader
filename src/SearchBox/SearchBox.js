@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SearchBox.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-class SearchBox extends Component {
+export default class SearchBox extends React.Component {
   render() {
     return (
       <div className="SearchBox">
@@ -13,5 +13,3 @@ class SearchBox extends Component {
     );
   }
 }
-
-export default SearchBox;

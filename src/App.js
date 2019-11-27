@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import SearchBar from './SearchBar/SearchBar';
 import FilterableList from './FilterableList/FilterableList';
 
-class App extends Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       searchTerm: '',
       filterOption: 'All'
-    };
+    }
   }
 
   render() {
@@ -26,5 +26,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

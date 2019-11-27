@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ListItem.css';
 import ControlBar from '../ControlBar/ControlBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ import {
   faFileVideo
  } from '@fortawesome/free-solid-svg-icons';
 
-class ListItem extends Component {
+ export default class ListItem extends React.Component {
   render() {
 
     const icons = {
@@ -42,5 +42,3 @@ class ListItem extends Component {
     );
   }
 }
-
-export default ListItem;
