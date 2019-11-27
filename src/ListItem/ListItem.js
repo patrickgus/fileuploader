@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './ListItem.css';
 import ControlBar from '../ControlBar/ControlBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
+import { 
   faFileImage,
   faFileAudio,
   faFileAlt,
   faFileVideo
  } from '@fortawesome/free-solid-svg-icons';
 
- export default class ListItem extends React.Component {
+class ListItem extends Component {
   render() {
+
     const icons = {
       "jpg": faFileImage,
       "mov": faFileVideo,
@@ -33,7 +34,7 @@ import {
           <div className="ListItem__actions">
             <div className="ListItem__status">
               {this.props.status}
-            </div>
+            </div> 
             <ControlBar/>
           </div>
         </div>
@@ -41,3 +42,5 @@ import {
     );
   }
 }
+
+export default ListItem;

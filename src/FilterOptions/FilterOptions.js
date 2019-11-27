@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './FilterOptions.css';
 
-export default class FilterOptions extends React.Component {
+class FilterOptions extends Component {
   render() {
     const { filterOption } = this.props;
     return (
@@ -9,7 +9,7 @@ export default class FilterOptions extends React.Component {
         <div className="FilterOptions__option">
           <label htmlFor="filter_all">
             <input type="radio" value="All" id="filter_all" name="filter" checked={filterOption ==="All"}/>
-          All
+          All 
           </label>
         </div>
         <div className="FilterOptions__option">
@@ -34,3 +34,5 @@ export default class FilterOptions extends React.Component {
     );
   }
 }
+
+export default FilterOptions;
