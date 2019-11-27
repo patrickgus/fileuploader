@@ -23,7 +23,8 @@ export default class App extends React.Component {
       <div className="App">
         <SearchBar 
           searchTerm={this.state.searchTerm} 
-          filterOption={this.state.filterOption}/>
+          filterOption={this.state.filterOption}
+          handleUpdate={term=>this.updateSearchTerm(term)}/>
         <FilterableList 
           files={this.props.files}  
           searchTerm={this.state.searchTerm} 
